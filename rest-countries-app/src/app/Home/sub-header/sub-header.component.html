@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="search-input">
+        <div class="search-icon">
+           <fa-icon [icon]="searchIcon" class="color-icon"></fa-icon>
+        </div>
+        <div class="input-section">
+        <input [(ngModel)]="countryName" (keyup)="setMessage($event.target)" class="enter-country" placeholder='Searching for a country...'>
+        </div>
+    </div>
+    <div class="sub-container">
+      <div class="dropdown">
+        <div class="dropbtn adjust">
+          <p class="txt">Filter by Region</p>
+          <div class="caret">
+            <fa-icon [icon]="angleDown" style="width: 12px; height: 12px;" (click)="onToggleClick()"></fa-icon>
+          </div>
+          <div class="dropdown-content dropdown-txt" [ngClass]="{'show': isDropDownMenu}" (click)="test($event.target)">
+            <a>Africa</a>
+            <a>America</a>
+            <a>Asia</a>
+            <a>Europe</a>
+            <a>Oceania</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+</div>
+
+  
+

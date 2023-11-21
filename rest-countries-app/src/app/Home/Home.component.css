@@ -1,0 +1,9 @@
+.detialed {
+    margin-top: 48px;
+}
+
+@media only screen and (max-width: 400px) {
+    .detialed {
+        margin-left: -6px;
+    }
+}

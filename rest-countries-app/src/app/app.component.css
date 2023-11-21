@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.sub-header {
+    margin-left: 80px;
+    margin-right: -158px;
+}
+
+.home {
+    margin-left: 80px;
+    margin-right: 80px;
+    /* overflow-x: hidden;  */
+}
+
+.country-detail {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.country{
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+    .sub-header {
+        margin-left: 16px;
+    }
+
+    .home {
+        margin-left: 56px;
+        margin-right: 56px;
+    }
+  }

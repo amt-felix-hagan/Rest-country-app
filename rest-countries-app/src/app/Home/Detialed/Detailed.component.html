@@ -1,0 +1,66 @@
+<div class="container">
+    <div 
+    class="card" 
+    *ngFor="let value of countries" 
+    (click)="onClick(value)">
+        <div class="flag">
+            <img [src]="value.flags.png" >
+        </div>
+        <div class="text">
+            <div class="larger-text">
+                <h3>{{value.name.common}}</h3>
+            </div>
+            <div class="details-container">
+                <p>Population {{value.population}}</p>
+                <p>Region {{value.region}}</p>
+                <p>Capital {{value.capital}}</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- <div class="card">
+        <div class="flag"></div>
+        <div class="text">
+            <div class="larger-text">
+                <h3>Germany</h3>
+            </div>
+            <div class="details-container">
+                <p>Population</p>
+                <p>Region</p>
+                <p>Capital</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flag"></div>
+        <div class="text">
+            <div class="larger-text">
+                <h3>Germany</h3>
+            </div>
+            <div class="details-container">
+                <p>Population</p>
+                <p>Region</p>
+                <p>Capital</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flag"></div>
+        <div class="text">
+            <div class="larger-text">
+                <h3>Germany</h3>
+            </div>
+            <div class="details-container">
+                <p>Population</p>
+                <p>Region</p>
+                <p>Capital</p>
+            </div>
+            
+        </div>
+    </div> -->
+</div>
