@@ -17,6 +17,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .container{
+        overflow-x: hidden;
+    }
+
     .sub-header {
         margin-left: 16px;
     }
@@ -26,7 +30,7 @@
         margin-right: 56px;
     }
 
-    :host {
+    /* :host {
         overflow-x: hidden;
-      }
+      } */
   }

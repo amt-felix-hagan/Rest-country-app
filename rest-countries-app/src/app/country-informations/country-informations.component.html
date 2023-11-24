@@ -27,7 +27,7 @@
                     <div class="second-detail">
                         <p class="description correction-btn">Top Level Domain:<span class="value"> {{selectedCountry?.tld[0]}}</span></p>
                         <p class=" description  correction-btn"> Currencies:<span class="value length"> {{currency.name || 'N/A'}}</span></p>
-                        <p class="description  correction-btn">Languages:<span class="value">{{language}}</span></p>
+                        <p class="description  correction-btn">Languages: <span class="value"> {{language}}</span></p>
                     </div>
                 </div>
                 <div class="btm-info">
@@ -36,15 +36,9 @@
                             Border Countries: 
                         </div>
                     </div>
-                    <div class="border-container">
+                    <div class="border-container" *ngFor="let borderCountries of selectedCountry.borders; let i = index">
                         <div class="border-countries value">
-                            {{selectedCountry.borders[0]}}
-                        </div>
-                        <div class="border-countries value">
-                            {{selectedCountry.borders[1]}}
-                        </div>
-                        <div class="border-countries value">
-                            {{selectedCountry.borders[2]}}
+                            {{selectedCountry.borders[i]}}
                         </div>
                     </div>
                     
