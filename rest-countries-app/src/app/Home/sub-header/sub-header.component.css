@@ -12,7 +12,7 @@
     gap: 24px;
     padding-left: 20px;
     border-radius: 5px;
-    background: #FFF;
+    background: var(--cardBackground);
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -34,12 +34,18 @@
 }
 
 input{
-    color: #848484;
+    color: var(--searchInputTextColor);
     font-family: 'Nunito Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    background-color: var(--cardBackground);
+}
+
+::placeholder {
+    color: var(--searchInputTextColor);
+    opacity: 1; 
 }
 
 .dropbtn {
@@ -47,7 +53,7 @@ input{
     height: 56px;
     border: none;
     border-radius: 5px;
-    background: #FFF;
+    background: var(--cardBackground);
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
   }
 
@@ -55,7 +61,7 @@ input{
     display: flex;
     align-items: center;
     gap: 47px;
-    margin-left: 236px;
+    margin-left: 37px;
   }
 
   .caret {
@@ -64,8 +70,12 @@ input{
     align-items: center;
   }
 
+  .color-icon{
+    color: var(--iconColor);
+  }
+
   .txt {
-    color: #111517;
+    color: var(--textColor);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -88,13 +98,13 @@ input{
     height: 164px;
     margin-top: 220px;
     border-radius: 5px;
-    background: #FFF;
+    background: var(--cardBackground);
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
     z-index: 1;
   }
  
   .dropdown-content a {
-    color: #111517;
+    color: var(--textColor);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -120,11 +130,10 @@ input{
       flex-direction: column;
       gap: 40px;
       margin-left: -36px
-      /* justify-content:  */
   }
 
     .search-input {
-      width: 316px;
+      width: 266px;
       height: 48px;
   }
 

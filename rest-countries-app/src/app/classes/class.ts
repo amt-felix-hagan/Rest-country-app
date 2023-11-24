@@ -1,4 +1,3 @@
-
 export class Countries {
     constructor(
         public flags: SelectOptions, 
@@ -6,10 +5,12 @@ export class Countries {
         public population: number,
         public region: string,
         public capital: string[],
-        public subRegion: string,
+        public subregion: string,
         public tld: string[],
-        public currencies: SelectOptions,
-        public laguages: SelectOptions) {}
+        public currencies: CurrencyOptions,
+        public languages: SelectOptions,
+        public borders: string[]
+    ) {}
 }
 
 class SelectOptions {
@@ -18,10 +19,15 @@ class SelectOptions {
         public png: string, 
         public NGN: FurtherOptions, 
         public nativeName: FurtherOptions,
-        public eng: string
-        ) {}
+        public language: string,
+        public lan: FurtherOptions
+    ) {}
 }
 
 class FurtherOptions {
     constructor(public name: string, public common: string) {}
+}
+
+class CurrencyOptions {
+    constructor(public primary: FurtherOptions) {}
 }

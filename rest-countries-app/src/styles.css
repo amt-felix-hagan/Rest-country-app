@@ -1,5 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    /* overflow-x: hidden; */
+}
+
+:root {
+    --background: #FAFAFA;
+    --cardBackground: #FAFAFA;
+    --textColor: #111517;
+    --searchInputTextColor: #848484;
+    --iconColor: black;
+}
+
+
+.dark-mode {
+    --background: hsl(207, 26%, 17%);
+    --cardBackground: #2B3844;
+    --textColor: #FFF;
+    --searchInputTextColor: #FFF;
+    --iconColor: #FFF;
+}
+
 @media only screen and (max-width: 400px) {
     body {
         overflow-x: hidden;
+        width: 375px;
+        height: 1591px;
     }
-}
+  }
+
+
+
+
+
+

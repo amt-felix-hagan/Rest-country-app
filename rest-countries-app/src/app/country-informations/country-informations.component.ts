@@ -16,20 +16,19 @@ export class CountryInformationsComponent implements OnInit{
   arrowLeftIcon = faArrowLeft;
   country: Countries[];
   selectedCountry: Countries;
+  currency;
+  language;
 
   constructor(private countryApi: CountriesApiService,private _location:Location) {}
   ngOnInit(): void {
     this.countryApi.getSelectedCountry.subscribe(data => {
+      console.log(data);
       this.selectedCountry = data;
+
+      this.currency = Object.values(this.selectedCountry.currencies)[0];
+      this.language = Object.values(this.selectedCountry.languages)[0];
+      console.log(this.language);
     })
-
-
-  //  this.countryApi.getSelectedCountry.subscribe(respond => {
-  //     this.country = this.defaultCountries.filter((value: Countries) => {
-  //       // value.includes()
-  //     })
-      
-  //   });
   }
 
   goBack(){

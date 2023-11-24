@@ -9,23 +9,23 @@
     width: 136px;
     height: 40px;
     border-radius: 6px;
-    background: #FFF;
+    background: var(--cardBackground);
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
     cursor: pointer;
 }
 
+.arrowIcon {
+    color: var(--iconColor);
+}
+
 .text {
-    color: #111517;
+    color: var(--textColor);
     font-family:' Nunito Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
 }
-
-/* .icon {
-    background: yel
-} */
 
 .detail-container {
     display: flex;
@@ -42,17 +42,15 @@
 .information {
     width: 598px;
     height: 323px;
-    /* background-color: red; */
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
-    /* margin-top: -53px; */
 }
 
 h4 {
-    color: #111517;
+    color: var(--textColor);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 32px;
     font-style: normal;
@@ -70,12 +68,10 @@ h4 {
 .first-detail {
     width: 251px;
     height: 160px;
-
-    /* background-color: yellow; */
 }
 
 .first-detail p {
-    color: #111517;
+    color: var(--textColor);
     font-family:' Nunito Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -97,7 +93,7 @@ h4 {
 
 
 .value {
-    color: #111517;
+    color: var(--textColor);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -108,12 +104,10 @@ h4 {
 .second-detail{
     width: 263px;
     height: 95px;
-
-    /* background-color: brown; */
 }
 
 .second-detail p{
-    color: #111517;
+    color: var(--textColor);
     font-family:' Nunito Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -135,16 +129,65 @@ h4 {
     width: 96px;
     height: 28px;
     border-radius: 2px;
-    background: #FFF;
+    background: var(--cardBackground);
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
 }
 
 .txt {
-    color: #111517;
+    color: var(--textColor);
     font-family:' Nunito Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 375px;
+        height: 1591px;
+        margin-left: -28px;
+    }
+
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information {
+        margin-top: -283px;
+    }
+
+    .flag img {
+        width: 319.837px;
+        height: 275.924px;
+        object-fit: contain;
+    }
+
+    .detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btm-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 16px;
+    }
+
+    .second-detail{
+        margin-top: -57px;
+    }
+
+    .border-container {
+        display: flex;
+        gap: 7px;
+    }
+
+    .correction-btn {
+        width: 375px;
+    }
+    
 }
 

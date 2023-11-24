@@ -2,22 +2,14 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    background: var(--background);
 }
 
-.sub-header {
-    margin-left: 80px;
-    margin-right: -158px;
-}
+
 
 .home {
-    margin-left: 80px;
-    margin-right: 80px;
-    /* overflow-x: hidden;  */
-}
-
-.country-detail {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 40px;
+    margin-right: 100px;
 }
 
 .country{
@@ -33,4 +25,8 @@
         margin-left: 56px;
         margin-right: 56px;
     }
+
+    :host {
+        overflow-x: hidden;
+      }
   }

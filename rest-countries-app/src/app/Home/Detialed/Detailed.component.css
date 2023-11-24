@@ -3,7 +3,7 @@
 
 .container {
     display:grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 3 columns */
+    grid-template-columns: repeat(4, 1fr); 
     grid-gap: 75px;
 }
 
@@ -11,14 +11,14 @@
     width: 264px;
     height: 336px;
     border-radius: 5px;
-    background: #FFF;
+    background: var(--cardBackground);
     box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
     cursor: pointer;
 }
 
 
 .flag img {
-    width: 267px;
+    width: 264px;
     height: 160px;
     background: lightgray 0px 0px / 100% 100% no-repeat;
 }
@@ -28,7 +28,7 @@
 }
 
 .larger-text {
-    color: #111517;
+    color: var(--textColor);
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -37,7 +37,7 @@
 }
 
 .details-container p {
-    color: #111517;
+    color: var(--textColor);
     font-family: "Nunito Sans", sans-serif;
     font-size: 14px;
     font-style: normal;

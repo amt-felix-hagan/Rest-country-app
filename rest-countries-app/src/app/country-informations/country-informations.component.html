@@ -1,7 +1,8 @@
 <div class="container">
     <div class="back-button" (click)="goBack()">
         <div class="icon">
-        <fa-icon [icon]="arrowLeftIcon" style="width: 20px; height: 20px;"></fa-icon>
+        <fa-icon [icon]="arrowLeftIcon" style="width: 20px; height: 20px;"
+        class="arrowIcon"></fa-icon>
         </div>
         <div class="text">
             Back
@@ -17,31 +18,36 @@
                 <h4 class="description correction-top">{{selectedCountry.name.common}}</h4>
                 <div class="detail">
                     <div class="first-detail">
-                        <p class="description correction-btn">Native Name:<span class="value"> België</span></p>
+                        <p class="description correction-btn">Native Name:<span class="value">{{selectedCountry.name.common}}</span></p>
                         <p class="description correction-btn">Population:<span class="value"> {{selectedCountry?.population}}</span></p>
                         <p class="description  correction-btn">Region:<span class="value"> {{selectedCountry?.region}}</span></p>
-                        <p class="description  correction-btn">Sub Region:<span class="value"> {{selectedCountry?.subRegion}}</span> </p>
+                        <p class="description  correction-btn">Sub Region:<span class="value"> {{selectedCountry?.subregion}}</span> </p>
                         <p class="description  correction-btn">Capital:<span class="value"> {{selectedCountry?.capital[0]}}</span></p>
                     </div>
                     <div class="second-detail">
-                        <p class="description correction-btn">Top Level Domain:<span class="value"> {{selectedCountry?.tld}}</span></p>
-                        <p class=" description  correction-btn"> Currencies:<span class="value"> {{selectedCountry?.currencies}}</span></p>
-                        <p class="description  correction-btn">Languages:<span class="value">{{selectedCountry?.laguages?.eng}}</span></p>
+                        <p class="description correction-btn">Top Level Domain:<span class="value"> {{selectedCountry?.tld[0]}}</span></p>
+                        <p class=" description  correction-btn"> Currencies:<span class="value length"> {{currency.name || 'N/A'}}</span></p>
+                        <p class="description  correction-btn">Languages:<span class="value">{{language}}</span></p>
                     </div>
                 </div>
                 <div class="btm-info">
-                    <div class="txt">
-                        Border Countries: 
+                    <div class="txt-container">
+                        <div class="txt">
+                            Border Countries: 
+                        </div>
                     </div>
-                    <div class="border-countries value">
-                        France
+                    <div class="border-container">
+                        <div class="border-countries value">
+                            {{selectedCountry.borders[0]}}
+                        </div>
+                        <div class="border-countries value">
+                            {{selectedCountry.borders[1]}}
+                        </div>
+                        <div class="border-countries value">
+                            {{selectedCountry.borders[2]}}
+                        </div>
                     </div>
-                    <div class="border-countries value">
-                        Germany
-                    </div>
-                    <div class="border-countries value">
-                        Netherlands
-                    </div>
+                    
                 </div>
             </div>
         </div>
