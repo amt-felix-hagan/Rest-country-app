@@ -33,15 +33,7 @@ export class SubHeaderComponent implements OnInit {
 
   test(e: any){
     this.searchService.filterRegions(e.innerText);
-    // alert(e.innerText);
     
   }
 
-  onButtonClick() {
-    this.countryService.setCountryName(this.countryName);
-
-    this.countryService.getCountryName().subscribe(data => {
-      // console.log(data);
-    })
-  }
 }

@@ -14,13 +14,9 @@ getSelectedCountry = this.selectedCountry.asObservable();
 
   constructor(private http: HttpClient) {  }
 
-  setCountryName(value: string) {
-    this.country = value;
-  }
 
-  getCountryName(): Observable<any> {
-   return this.http.get(`https://restcountries.com/v3.1/name/${this.country}?fullText=true`);
-  }
+
+ 
 
   getAllCountries(): Observable<any> {
    return this.http.get(`https://restcountries.com/v3.1/all`);
