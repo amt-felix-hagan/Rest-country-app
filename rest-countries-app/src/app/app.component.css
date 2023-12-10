@@ -3,19 +3,18 @@
   flex-direction: column;
   gap: 48px;
   background: var(--background);
-  /* padding-left: 80px; */
-  /* padding-right: 80px; */
 }
 
 .header {
   width: 100%;
   background: var(--cardBackground);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  padding-left: 30px;
 }
 
 .home {
-  margin-left: 40px;
-  margin-right: 100px;
+  margin-left: 72px;
+  margin-right: 74px;
 }
 
 .country {
@@ -35,8 +34,4 @@
     margin-left: 56px;
     margin-right: 56px;
   }
-
-  /* :host {
-        overflow-x: hidden;
-      } */
 }
