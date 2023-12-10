@@ -7,13 +7,13 @@ import { ThemeService } from '../dark-theme.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
   moonIcon = faMoon;
   isDarkMode: boolean;
 
-  constructor (private  themeService: ThemeService) {
+  constructor(private themeService: ThemeService) {
     this.isDarkMode = this.themeService.getDarkMode();
     console.log(this.isDarkMode);
   }
@@ -22,5 +22,4 @@ export class HeaderComponent {
     this.isDarkMode = !this.isDarkMode;
     this.themeService.setDarkMode(this.isDarkMode);
   }
-
 }

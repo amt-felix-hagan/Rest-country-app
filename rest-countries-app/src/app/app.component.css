@@ -1,36 +1,42 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    background: var(--background);
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  background: var(--background);
+  /* padding-left: 80px; */
+  /* padding-right: 80px; */
 }
 
-
+.header {
+  width: 100%;
+  background: var(--cardBackground);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
 
 .home {
-    margin-left: 40px;
-    margin-right: 100px;
+  margin-left: 40px;
+  margin-right: 100px;
 }
 
-.country{
-    margin-left: 80px;
+.country {
+  margin-left: 80px;
 }
 
 @media only screen and (max-width: 400px) {
-    .container{
-        overflow-x: hidden;
-    }
+  .container {
+    overflow-x: hidden;
+  }
 
-    .sub-header {
-        margin-left: 16px;
-    }
+  .sub-header {
+    margin-left: 16px;
+  }
 
-    .home {
-        margin-left: 56px;
-        margin-right: 56px;
-    }
+  .home {
+    margin-left: 56px;
+    margin-right: 56px;
+  }
 
-    /* :host {
+  /* :host {
         overflow-x: hidden;
       } */
-  }
+}

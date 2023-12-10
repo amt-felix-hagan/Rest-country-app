@@ -1,59 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Josefin+Sans&family=Montserrat:wght@500&family=Nunito+Sans:opsz,wght@6..12,600;6..12,800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Josefin+Sans&family=Montserrat:wght@500&family=Nunito+Sans:opsz,wght@6..12,600;6..12,800&display=swap");
 
 .container {
-    display:grid;
-    grid-template-columns: repeat(4, 0fr);
-    grid-gap: 75px;
-    width:1258px;
+  display: flex;
+  grid-gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .card {
-    width: 239px;
-    height: 336px;
-    border-radius: 5px;
-    background: var(--cardBackground);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
-    cursor: pointer;
+  width: 239px;
+  height: 336px;
+  border-radius: 5px;
+  background: var(--cardBackground);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-
 .flag img {
-    width: 239px;
-    height: 160px;
-    background: lightgray 0px 0px / 100% 100% no-repeat;
-    object-fit: cover;
+  width: 239px;
+  height: 160px;
+  background: lightgray 0px 0px / 100% 100% no-repeat;
+  object-fit: cover;
 }
 
 .text {
-   margin-left: 24px;
+  margin-left: 24px;
 }
 
 .larger-text {
-    color: var(--textColor);
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 26px;
+  color: var(--textColor);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 26px;
 }
 
 .details-container p {
-    color: var(--textColor);
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px;
+  color: var(--textColor);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 400px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
   }
+}
