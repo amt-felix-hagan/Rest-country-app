@@ -15,7 +15,6 @@ export class HeaderComponent {
 
   constructor(private themeService: ThemeService) {
     this.isDarkMode = this.themeService.getDarkMode();
-    console.log(this.isDarkMode);
   }
 
   toggleDarkMode() {

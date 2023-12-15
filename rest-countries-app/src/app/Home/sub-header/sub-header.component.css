@@ -65,13 +65,19 @@ input {
   margin-left: 41px;
 }
 
-.caret {   
+.caret {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.color-icon {
+.color-icon-1 {
+  font-size: 0.80em;
+  color: var(--textColor);
+}
+
+.color-icon-2 {
+  font-size: 0.73em;
   color: var(--iconColor);
 }
 
@@ -138,5 +144,46 @@ input {
 
   .adjust {
     margin-left: -3px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .search-input {
+    width: 500px;
+    height: 70px;
+  }
+
+  .sub-container {
+    width: 321px;
+  }
+  
+  .dropbtn {
+    width: 275px;
+  }
+
+  .dropdown-content {
+    width: 277px;
+    height: 200px;
+    margin-top: 261px;
+  }
+
+  .dropdown-content a {
+    font-size: 25px;
+    padding: 9px 16px;
+  }
+
+  input {
+    font-size: 25px;
+  }
+  
+.color-icon-1{
+  font-size: 1.0em;
+}
+  .color-icon-2 {
+    font-size: 0.80em;
+  }
+
+  .txt {
+    font-size: 25px;
   }
 }

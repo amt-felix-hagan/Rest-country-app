@@ -6,14 +6,12 @@
 }
 
 .header {
-  width: 100%;
   background: var(--cardBackground);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
-  padding-left: 30px;
 }
 
 .home {
-  margin-left: 72px;
+  margin-left: 47px;
   margin-right: 74px;
 }
 
@@ -35,3 +33,4 @@
     margin-right: 56px;
   }
 }
+

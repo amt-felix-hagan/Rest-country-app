@@ -23,7 +23,8 @@
 }
 
 .colorIcon {
-  color: var(--iconColor);
+  font-size: 0.83em;
+  color: var(--textColor);
 }
 
 .text-header {
@@ -48,10 +49,7 @@
 /* mobile view */
 
 @media only screen and (max-width: 400px) {
-  .header-container {
-    width: 375px;
-    height: 80px;
-  }
+  
 
   .image-container {
     margin-right: 11px;
@@ -75,3 +73,26 @@
   }
 }
 
+@media (min-width: 1450px) {
+  .text-header {
+    color: var(--textColor);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 26px;
+  }
+
+  .small-text-image {
+    color: var(--textColor);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .colorIcon {
+    font-size: 1.4em;
+  }
+}

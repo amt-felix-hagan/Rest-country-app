@@ -31,14 +31,18 @@ export class CountryInformationsComponent implements OnInit {
     });
 
     this.countryApi.getAllCountries().subscribe((data) => {
-      // Assuming this.selectedCountry.borders is an array of cca3 codes
       this.defaultNames = this.selectedCountry.borders.map((borderCode) => {
         const matchingCountry = data.find(
           (element) => element.cca3 === borderCode
         );
-        return matchingCountry
+        if (!matchingCountry) {
+          return;
+        }else{
+          return matchingCountry
           ? matchingCountry.name.common
           : 'Unknown Country';
+        }
+        
       });
     });
   }

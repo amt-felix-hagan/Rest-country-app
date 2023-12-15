@@ -1,9 +1,16 @@
-.detialed {
-    margin-top: 48px;
+.sub-header {
+  margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 400px) {
-    .detialed {
-        margin-left: 9px;
-    }
+  .detialed {
+    margin-left: 9px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .detialed {
+    width: 2405px;
+    margin: auto;
+  }
 }

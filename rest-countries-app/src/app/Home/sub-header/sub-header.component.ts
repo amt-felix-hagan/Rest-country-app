@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
 
 import { faSearch, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { CountriesApiService } from '../../countries-api.service';
@@ -18,7 +18,8 @@ export class SubHeaderComponent implements OnInit {
 
   constructor(
     private countryService: CountriesApiService,
-    private searchService: SearchCountryService
+    private searchService: SearchCountryService,
+    private elementRef: ElementRef
   ) {}
 
   ngOnInit(): void {}
@@ -31,8 +32,15 @@ export class SubHeaderComponent implements OnInit {
     this.isDropDownMenu = !this.isDropDownMenu;
   }
 
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event): void {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isDropDownMenu = false;
+    }
+  }
+
   selectOption(event: Event) {
-    this.isDropDownMenu = false;
+    this.isDropDownMenu = true;
   }
 
   test(e: any) {
