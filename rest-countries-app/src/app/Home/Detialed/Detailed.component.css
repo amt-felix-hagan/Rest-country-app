@@ -2,14 +2,13 @@
 
 .container {
   display: flex;
-  gap: 30px;
+  gap: 75px;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-flow: row wrap;
 }
 
 .card {
-  width: 239px;
+  width: 264px;
   height: 336px;
   border-radius: 5px;
   background: var(--cardBackground);
@@ -19,7 +18,7 @@
 }
 
 .flag img {
-  width: 239px;
+  width: 264px;
   height: 160px;
   background: lightgray 0px 0px / 100% 100% no-repeat;
   object-fit: cover;
@@ -38,7 +37,12 @@
   line-height: 26px;
 }
 
-.details-container p {
+h3 {
+  margin-top: 13px;
+  margin-bottom: -3px;
+}
+
+p {
   color: var(--textColor);
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
@@ -47,50 +51,27 @@
   line-height: 16px;
 }
 
+.value {
+  color: var(--textColor);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+}
+
 a {
   cursor: pointer;
 }
 
-@media (min-width:1450px) {
-  .card {
-    width: 480px;
-    height: 544px;
-    border-radius: 5px;
-    background: var(--cardBackground);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-
-  .flag img {
-    width: 480px;
-    height: 283px;   
-  }
-
-  .larger-text {
-    color: var(--textColor);
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 26px;
-  }
-
-  .details-container p {
-    color: var(--textColor);
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 16px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
+@media (max-width: 1436px) {
   .container {
-    display: flex;
-    flex-direction: column;
+    gap: 15px;
   }
 }
 
-
+@media (min-width: 1790px) {
+  .container {
+    gap: 80px;
+  }
+}
