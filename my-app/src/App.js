@@ -4,7 +4,7 @@ import ImageSlider from "./components/image-slider";
 function App() {
   return (
     <div className="App">
-      image-slider
+      image slider
       <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}

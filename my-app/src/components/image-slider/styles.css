@@ -1,55 +1,62 @@
-.container{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 623px;
-    height: 400px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.current-image{
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 7px #666;
-    width: 100%;
-    height: 100%;
+.current-image {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+  width: 100%;
+  height: 100%;
 }
 
-.arrow{
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    color: #fff;
-    filter: drop-shadow(0px 0px 5px #555);
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  filter: drop-shadow(0px 0px 5px #555);
 }
 
-.arrow-left{
-    left: 1rem;
+.arrow-left {
+  left: 1rem;
+  bottom: 11rem;
 }
 
-.arrow-right{
-    right: 1rem;
+.arrow-right {
+  right: 1rem;
+  bottom: 11rem;
 }
 
-.circle-indicator{
-    display: flex;
-    position: absolute;
-    bottom: 1rem;
+.circle-indicator {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  right: 13.5rem;
 }
 
-.current-indicator{
-    background-color: #ffffff;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: none;
-    margin: 0 0.2rem;
-    cursor: pointer;
+.current-indicator {
+  background-color: #ffffff;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
 }
 
-.hide-current-image{
-    display: none;
+.hide-current-image {
+  display: none;
 }
 
 .inactive-indicator {
-    background-color: grey;
+  background-color: grey;
+}
+
+.image-container {
+  width: 623px;
+  height: 400px;
+  margin-top: 1rem;
+  position: relative;
 }
